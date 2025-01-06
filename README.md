@@ -1,8 +1,21 @@
-## Install XMRig on Raspberry Pi
+# Install XMRig on Raspberry Pi
 
-> For other devices, Install XMRig [here](https://github.com/NajmAjmal/xmrig-install)
+## Method 1 (Quick install)
 
-# Method 1: Install directly from the source
+If you are going to use moneroocean as your Mining pool, then you can use this to quickly install scripts on ANY Debian Linux computer.
+
+
+    sudo wget -qO- https://cdn.najm.uk/install/xmrig | bash
+    
+Make sure to run the command like this to start mining (assuming you are in the `xmrig/build` directory): 
+
+    ./xmrig -o <pool> -u <wallet_address> -p <miner_name>
+    
+View your mining progress at [Moneroocean.stream](https://moneroocean.stream/)
+
+
+
+## Method 2: Install directly from the source
 
 
     sudo apt update && sudo apt full-upgrade -y
@@ -23,21 +36,8 @@ For the last command you can customize it to your on preference by changing the:
   - Miner address: `-u`
   - Miner name: `-p`
 
-# Method 2 (Quick install)
 
-If you are going to use moneroocean As your Mining pool, then you can use this to quickly install scripts on ANY Debian Linux computer, although you cannot mine right away, you must run the `xmrig` command
-
-
-    sudo wget -qO- https://cdn.najm.uk/install/xmrig | bash
-    
-Make sure to run the command like this to start mining (assuming you are in the `xmrig/build` directory): 
-
-    ./xmrig -o <pool> -u <wallet_address> -p <miner_name>
-    
-View your mining progress at [Moneroocean.stream](https://moneroocean.stream/)
-
-
-#  Donate
+###  Donate
     
     
 This code is **100% free** to use, and we would greatly appreciate any donations to help support our work. If you'd like to donate, you can use the following cryptocurrency addresses:
